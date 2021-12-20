@@ -1,7 +1,7 @@
-console.log('JS OK');
+/* console.log(JS OK);
 
 
-/* TRACCIA:
+TRACCIA:
 
 Chiedi all’utente il suo nome,
 poi chiedi il suo cognome,
@@ -16,3 +16,11 @@ Infine scrivi sulla pagina nomecognomecolorepreferito21 */
 3 - Chiedere il colore preferito all'utente
 4 - Stampare nomeCognomeColorePreferito21
 */
+
+// 0 - Recuperare un elemento in pagina e preparare un messaggio contenente Password
+
+const passwordElement = document.getElementById('password');
+
+// 1 - Chiedere il nome all'utente
+const userName = prompt('Come ti chiami?');
+console.log(userName);
