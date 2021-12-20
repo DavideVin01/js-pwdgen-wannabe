@@ -14,12 +14,13 @@ Infine scrivi sulla pagina nomecognomecolorepreferito21 */
 1 - Chiedere il nome all'utente
 2 - Chiedere il cognome all'utente
 3 - Chiedere il colore preferito all'utente
-4 - Stampare nomeCognomeColorePreferito21
+4 - Chiedere dei numeri all'utente
+5 - Stampare nomeCognomeColorePreferito21
 */
 
 // 0 - Recuperare un elemento in pagina e preparare un messaggio contenente Password
 
-const passwordElement = document.getElementById('password');
+// const passwordElement = document.getElementById('password');
 
 // 1 - Chiedere il nome all'utente
 const userName = prompt('Come ti chiami?');
@@ -32,3 +33,15 @@ console.log(userSecondName);
 // 3 - Chiedere il colore preferito all'utente
 const userFavColor = prompt('Qual è il tuo colore preferito?');
 console.log(userFavColor);
+
+// 4 - Chiedere dei numeri preferiti all'utente
+const userNumbers = parseInt(prompt('Qual è il tuo numero preferito?'));
+console.log(userNumbers);
+console.log(typeof userNumbers);
+
+const password = userName + userSecondName + userFavColor + userNumbers
+
+const passwordElement = document.getElementById('password');
+
+// 5 - Stampare nomeCognomeColorePreferito00
+passwordElement.innerText = 'La tua password è ' + password;
