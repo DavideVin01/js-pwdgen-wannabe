@@ -28,3 +28,7 @@ console.log(userName);
 // 2 - Chiedere il cognome all'utente
 const userSecondName = prompt('Qual è il tuo cognome?');
 console.log(userSecondName);
+
+// 3 - Chiedere il colore preferito all'utente
+const userFavColor = prompt('Qual è il tuo colore preferito?');
+console.log(userFavColor);
